@@ -254,6 +254,7 @@ def test_build_nn(build_nn):
 
         logits, final_state = build_nn(test_cell, test_rnn_size, test_input_data, test_vocab_size, test_embed_dim)
 
+
         # Check name
         assert hasattr(final_state, 'name'), \
             'Final state doesn\'t have the "name" attribute.  Are you using build_rnn?'
